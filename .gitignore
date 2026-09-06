@@ -1,0 +1,8 @@
+venv/
+.env
+__pycache__/
+*.pyc
+data/*.pdf
+.DS_Store
+outputs/*.pkl
+outputs/*.bin
