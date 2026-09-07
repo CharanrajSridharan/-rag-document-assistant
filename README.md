@@ -20,7 +20,7 @@ The system is built in two parallel forms:
 
 ```mermaid
 flowchart TD
-    A[User uploads PDF] --> B[Phase 1: Document Ingestion<br/>pdfplumber + pypdf fallback]
+    A[User uploads PDF] --> B[Phase 1: Document Ingestion<br/>pdfplumber]
     B --> C[Phase 2: Cleaning + Chunking<br/>regex cleanup, fixed-size chunks with overlap]
     C --> D[Phase 3: Embedding Generation<br/>sentence-transformers all-MiniLM-L6-v2]
     D --> E[(Phase 4: FAISS Vector Index<br/>IndexFlatL2)]
